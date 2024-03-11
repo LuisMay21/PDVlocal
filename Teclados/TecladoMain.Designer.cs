@@ -64,7 +64,7 @@
             OtrosBtn.Name = "OtrosBtn";
             OtrosBtn.Size = new Size(255, 267);
             OtrosBtn.TabIndex = 8;
-            OtrosBtn.Text = "Otros...";
+            OtrosBtn.Text = "Test";
             OtrosBtn.UseVisualStyleBackColor = true;
             OtrosBtn.Click += ProdBtn_Click;
             // 
