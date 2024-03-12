@@ -27,18 +27,44 @@ namespace Punto_De_Venta.Teclados
             String opcion = BtnClick.Text;
 
             this.Close();
-            
+
 
             switch (opcion)
             {
 
                 case "Molida":
-                   
-                    
                     this.refer.AbrirTeclado(new TecaldoNum(this.refer));
                     break;
 
 
+                case "Pollo":
+                        this.refer.AbrirTeclado(new TecaldoNum(this.refer));
+                    break;
+
+
+                case "Chaya":
+                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
+                    break;
+
+                case "Espelon":
+                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
+                    break;
+
+                case "Colados":
+                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
+                    break;
+
+                case "Horneados":
+                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
+                    break;
+
+                case "Tobiholoch":
+                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
+                    break;
+
+                case "Brazos":
+                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
+                    break;
             }
 
 
