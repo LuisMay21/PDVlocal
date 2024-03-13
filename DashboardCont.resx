@@ -241,7 +241,7 @@
     <value>3</value>
   </data>
   <data name="PanelContenedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 153</value>
+    <value>6, 153</value>
   </data>
   <data name="PanelContenedor.Size" type="System.Drawing.Size, System.Drawing">
     <value>1915, 879</value>
