@@ -32,8 +32,8 @@
             panel1 = new Panel();
             button4 = new Button();
             button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            InventarioBtn = new Button();
+            VentasBtn = new Button();
             PanelContenedor = new Panel();
             Logout = new Button();
             panel1.SuspendLayout();
@@ -44,8 +44,8 @@
             resources.ApplyResources(panel1, "panel1");
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(InventarioBtn);
+            panel1.Controls.Add(VentasBtn);
             panel1.Controls.Add(PanelContenedor);
             panel1.Controls.Add(Logout);
             panel1.Name = "panel1";
@@ -62,17 +62,19 @@
             button3.Name = "button3";
             button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // InventarioBtn
             // 
-            resources.ApplyResources(button2, "button2");
-            button2.Name = "button2";
-            button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(InventarioBtn, "InventarioBtn");
+            InventarioBtn.Name = "InventarioBtn";
+            InventarioBtn.UseVisualStyleBackColor = true;
+            InventarioBtn.Click += InventarioBtn_Click;
             // 
-            // button1
+            // VentasBtn
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(VentasBtn, "VentasBtn");
+            VentasBtn.Name = "VentasBtn";
+            VentasBtn.UseVisualStyleBackColor = true;
+            VentasBtn.Click += VentasBtn_Click;
             // 
             // PanelContenedor
             // 
@@ -104,9 +106,10 @@
         private Panel panel1;
         private Button Logout;
         private Panel PanelContenedor;
-        private Button button1;
+        private Button Ventas;
         private Button button4;
         private Button button3;
-        private Button button2;
+        private Button InventarioBtn;
+        private Button VentasBtn;
     }
 }

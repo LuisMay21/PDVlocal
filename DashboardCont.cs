@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Punto_De_Venta.Pantallas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,9 +66,9 @@ namespace Punto_De_Venta
             }
         }
 
-         private void AbrirForm(object FormChild)
+        private void AbrirForm(object FormChild)
         {
-            if (this.PanelContenedor.Controls.Count>0)
+            if (this.PanelContenedor.Controls.Count > 0)
                 this.PanelContenedor.Controls.RemoveAt(0);
             Form FH = FormChild as Form;
             FH.TopLevel = false;
@@ -78,18 +79,15 @@ namespace Punto_De_Venta
 
         }
 
+        private void VentasBtn_Click(object sender, EventArgs e)
+        {
 
+            AbrirForm(new PDVform());
+        }
 
-
-
-
-
-
-
-
-
-
-
-
+        private void InventarioBtn_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new InventarioForm());
+        }
     }
 }
