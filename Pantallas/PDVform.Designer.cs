@@ -30,6 +30,8 @@
         {
             PanelTeclado = new Panel();
             ContenedorProductos = new TabControl();
+            NewPage = new Button();
+            EliminarPage = new Button();
             SuspendLayout();
             // 
             // PanelTeclado
@@ -44,15 +46,37 @@
             ContenedorProductos.Location = new Point(837, 12);
             ContenedorProductos.Name = "ContenedorProductos";
             ContenedorProductos.SelectedIndex = 0;
-            ContenedorProductos.Size = new Size(1067, 855);
+            ContenedorProductos.Size = new Size(1067, 716);
             ContenedorProductos.TabIndex = 3;
             ContenedorProductos.TabStop = false;
+            // 
+            // NewPage
+            // 
+            NewPage.Location = new Point(837, 734);
+            NewPage.Name = "NewPage";
+            NewPage.Size = new Size(110, 41);
+            NewPage.TabIndex = 5;
+            NewPage.Text = "Nueva Nota";
+            NewPage.UseVisualStyleBackColor = true;
+            NewPage.Click += NewPage_Click;
+            // 
+            // EliminarPage
+            // 
+            EliminarPage.Location = new Point(969, 734);
+            EliminarPage.Name = "EliminarPage";
+            EliminarPage.Size = new Size(110, 41);
+            EliminarPage.TabIndex = 6;
+            EliminarPage.Text = "Eliminar Nota";
+            EliminarPage.UseVisualStyleBackColor = true;
+            EliminarPage.Click += EliminarPage_Click;
             // 
             // PDVform
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1916, 879);
+            Controls.Add(EliminarPage);
+            Controls.Add(NewPage);
             Controls.Add(PanelTeclado);
             Controls.Add(ContenedorProductos);
             FormBorderStyle = FormBorderStyle.None;
@@ -64,5 +88,7 @@
         #endregion
         private Panel PanelTeclado;
         private TabControl ContenedorProductos;
+        private Button NewPage;
+        private Button EliminarPage;
     }
 }
