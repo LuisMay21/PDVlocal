@@ -28,42 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tabPage1 = new TabPage();
-            ContenedorProductos = new TabControl();
-            tabPage2 = new TabPage();
             PanelTeclado = new Panel();
-            ContenedorProductos.SuspendLayout();
+            ContenedorProductos = new TabControl();
             SuspendLayout();
-            // 
-            // tabPage1
-            // 
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1059, 827);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
-            tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // ContenedorProductos
-            // 
-            ContenedorProductos.Controls.Add(tabPage1);
-            ContenedorProductos.Controls.Add(tabPage2);
-            ContenedorProductos.Location = new Point(837, 12);
-            ContenedorProductos.Name = "ContenedorProductos";
-            ContenedorProductos.SelectedIndex = 0;
-            ContenedorProductos.Size = new Size(1067, 855);
-            ContenedorProductos.TabIndex = 3;
-            // 
-            // tabPage2
-            // 
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1059, 827);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
-            tabPage2.UseVisualStyleBackColor = true;
             // 
             // PanelTeclado
             // 
@@ -71,6 +38,15 @@
             PanelTeclado.Name = "PanelTeclado";
             PanelTeclado.Size = new Size(819, 855);
             PanelTeclado.TabIndex = 4;
+            // 
+            // ContenedorProductos
+            // 
+            ContenedorProductos.Location = new Point(837, 12);
+            ContenedorProductos.Name = "ContenedorProductos";
+            ContenedorProductos.SelectedIndex = 0;
+            ContenedorProductos.Size = new Size(1067, 855);
+            ContenedorProductos.TabIndex = 3;
+            ContenedorProductos.TabStop = false;
             // 
             // PDVform
             // 
@@ -82,14 +58,11 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "PDVform";
             Text = "PDVform";
-            ContenedorProductos.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-        private TabPage tabPage1;
-        private TabControl ContenedorProductos;
-        private TabPage tabPage2;
         private Panel PanelTeclado;
+        private TabControl ContenedorProductos;
     }
 }

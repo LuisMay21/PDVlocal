@@ -29,46 +29,56 @@ namespace Punto_De_Venta.Teclados
             this.Close();
 
 
-            switch (opcion)
+            if (opcion=="Otros")
             {
 
-                case "Molida":
-                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
 
 
-                case "Pollo":
-                        this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
-
-
-                case "Chaya":
-                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
-
-                case "Espelon":
-                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
-
-                case "Colados":
-                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
-
-                case "Horneados":
-                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
-
-                case "Tobiholoch":
-                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
-
-                case "Brazos":
-                    this.refer.AbrirTeclado(new TecaldoNum(this.refer));
-                    break;
             }
+            else
+            {
+
+                refer.AbrirTeclado(new TecaldoNum(refer));
+
+                switch (opcion)
+                {
+
+                    case "Molida":
+
+                        break;
 
 
+                    case "Pollo":
 
+                        break;
+
+
+                    case "Chaya":
+
+                        break;
+
+                    case "Espelon":
+
+
+                    case "Colados":
+
+                        break;
+
+                    case "Horneados":
+
+                        break;
+
+                    case "Tobiholoch":
+
+                        break;
+
+                    case "Brazos":
+
+                        break;
+                }
+
+
+            }
 
 
 
