@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            CantTamtxt = new TextBox();
             RegresarBtn = new Button();
             button1 = new Button();
             button2 = new Button();
@@ -40,15 +40,17 @@
             button8 = new Button();
             button9 = new Button();
             button10 = new Button();
+            TamTipolb = new Label();
+            DelBtn = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // CantTamtxt
             // 
-            textBox1.Font = new Font("Segoe UI", 60F);
-            textBox1.Location = new Point(12, 23);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(779, 114);
-            textBox1.TabIndex = 0;
+            CantTamtxt.Font = new Font("Segoe UI", 60F);
+            CantTamtxt.Location = new Point(12, 71);
+            CantTamtxt.Name = "CantTamtxt";
+            CantTamtxt.Size = new Size(779, 114);
+            CantTamtxt.TabIndex = 0;
             // 
             // RegresarBtn
             // 
@@ -58,7 +60,7 @@
             RegresarBtn.TabIndex = 1;
             RegresarBtn.Text = "Atras";
             RegresarBtn.UseVisualStyleBackColor = true;
-            RegresarBtn.Click += NumerBtn_Click;
+            RegresarBtn.Click += BackBtn_Click;
             // 
             // button1
             // 
@@ -68,6 +70,7 @@
             button1.TabIndex = 2;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += AddBtn_Click;
             // 
             // button2
             // 
@@ -77,6 +80,7 @@
             button2.TabIndex = 3;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += AddBtn_Click;
             // 
             // button3
             // 
@@ -86,6 +90,7 @@
             button3.TabIndex = 4;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += AddBtn_Click;
             // 
             // button4
             // 
@@ -95,6 +100,7 @@
             button4.TabIndex = 5;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += AddBtn_Click;
             // 
             // button5
             // 
@@ -104,6 +110,7 @@
             button5.TabIndex = 6;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += AddBtn_Click;
             // 
             // button6
             // 
@@ -113,6 +120,7 @@
             button6.TabIndex = 7;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += AddBtn_Click;
             // 
             // button7
             // 
@@ -122,6 +130,7 @@
             button7.TabIndex = 10;
             button7.Text = "9";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += AddBtn_Click;
             // 
             // button8
             // 
@@ -131,6 +140,7 @@
             button8.TabIndex = 9;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += AddBtn_Click;
             // 
             // button9
             // 
@@ -140,6 +150,7 @@
             button9.TabIndex = 8;
             button9.Text = "7";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += AddBtn_Click;
             // 
             // button10
             // 
@@ -149,6 +160,27 @@
             button10.TabIndex = 11;
             button10.Text = "0";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += AddBtn_Click;
+            // 
+            // TamTipolb
+            // 
+            TamTipolb.AutoSize = true;
+            TamTipolb.Font = new Font("Segoe UI", 30F);
+            TamTipolb.Location = new Point(14, 13);
+            TamTipolb.Name = "TamTipolb";
+            TamTipolb.Size = new Size(597, 54);
+            TamTipolb.TabIndex = 12;
+            TamTipolb.Text = "Si ves esto reportar al supervisor";
+            // 
+            // DelBtn
+            // 
+            DelBtn.Location = new Point(599, 202);
+            DelBtn.Name = "DelBtn";
+            DelBtn.Size = new Size(180, 109);
+            DelBtn.TabIndex = 13;
+            DelBtn.Text = "Borrar";
+            DelBtn.UseVisualStyleBackColor = true;
+            DelBtn.Click += DelBtn_Click;
             // 
             // TecaldoNum
             // 
@@ -156,6 +188,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(803, 816);
             ControlBox = false;
+            Controls.Add(DelBtn);
+            Controls.Add(TamTipolb);
             Controls.Add(button10);
             Controls.Add(button7);
             Controls.Add(button8);
@@ -167,7 +201,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(RegresarBtn);
-            Controls.Add(textBox1);
+            Controls.Add(CantTamtxt);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TecaldoNum";
             Text = "TecaldoNum";
@@ -177,7 +211,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox CantTamtxt;
         private Button RegresarBtn;
         private Button button1;
         private Button button2;
@@ -189,5 +223,7 @@
         private Button button8;
         private Button button9;
         private Button button10;
+        private Label TamTipolb;
+        private Button DelBtn;
     }
 }

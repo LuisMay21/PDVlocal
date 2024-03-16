@@ -10,85 +10,77 @@ using System.Windows.Forms;
 
 namespace Punto_De_Venta.Teclados
 {
-    public partial class TecladoMain : Form
+    public partial class OtrosTam : Form
     {
         PDVform refer;
-       
-        public TecladoMain(PDVform refer)
+        public OtrosTam(PDVform refer)
         {
             InitializeComponent();
             this.refer = refer;
         }
 
-        private void ProdBtn_Click(object sender, EventArgs e)
+        private void OtrosBtn_Click(object sender, EventArgs e)
         {
             Button BtnClick = sender as Button;
-
             String opcion = BtnClick.Text;
 
-            
-
-
-            if (opcion=="Otros")
+            if (opcion == "Regresar")
             {
-
-                refer.AbrirTeclado(new OtrosTam(refer));
-
+                refer.AbrirTeclado(new TecladoMain(refer));
             }
             else
             {
 
-                
+               
 
                 switch (opcion)
                 {
 
-                    case "Molida":
+                    case "Chaya Chico":
 
                         break;
 
 
-                    case "Pollo":
+                    case "Molida Chico":
 
                         break;
 
 
-                    case "Chaya":
+                    case "Lata Grande":
 
                         break;
 
-                    case "Espelon":
+                    case "Espelon Chico":
 
 
-                    case "Colados":
-
-                        break;
-
-                    case "Horneados":
+                    case "Pollo Chico":
 
                         break;
 
-                    case "Tobiholoch":
+                    case "Pollo en salsa Verde":
 
                         break;
 
-                    case "Brazos":
+                    case "Rajas con Queso":
 
                         break;
+
+                    case "Dulce de Fresa":
+
+                        break;
+
+
                 }
+
+
                 refer.AbrirTeclado(new TecaldoNum(refer, opcion));
 
-
-       
+                
 
             }
 
+
             this.Close();
-
-
-
-
-
         }
     }
 }
